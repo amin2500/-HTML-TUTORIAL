@@ -39,6 +39,7 @@ button{
     color: white;
     border: none;
     padding: 8px 16px;
+    margin-bottom: 24px;
     font-size: 24px;
     cursor: pointer;
 }
@@ -65,7 +66,177 @@ li{
 .row{
     width: 100%;
     max-width: 1300px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+/*
+About
+*/
+
+#About{
+    padding: 48px 0;
+    background-color: lightgoldenrodyellow;
+    
+}
+
+h2{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.section__description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about__img--wrapper{
+    width: 40%;
+   padding: 0 24px;
+}
+img{
+    width: 100%;
+}
+
+.section__description--wrapper{
+    width: 60% ;
+    padding: 0 24px;
+}
+
+.section__description--para{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+/*
+Discord
+*/
+
+#Discord{
+    background-color:lightcyan;
+    padding: 48px 0;
+}
+
+/*
+contact
+*/
+
+#Contact{
+    background-color: rgb(204, 215, 248) ;
+}
+
+form{
+    width: 100%;
+   max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 24px;
+    
+}
+
+input, textarea{
+    margin-bottom: 24px;
+    font-size: 20px;
+    padding: 6px 12px;
+}
+
+
+/*
+Footer
+*/
+
+Footer{
+    background-color:#aaf5ff ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 0;
+}
+
+.footer__logo{
+   
+   max-width: 480px;
+   margin-bottom: 16px;
+}
+
+
+.footer__links{
+margin-bottom: 24px;
+padding: 0 16px;
+
+
+}
+/* small phones, tablets, large smartphones*/
+@media (max-width: 728px){
+.row   {
+     flex-direction: column;
+        
+    }
+    .home__discription{
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home__description--button{
+     max-width: 240px;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 60px;
+    }
+    
+    .subheader{
+        text-align: center;
+        font-size: 28px;
+    }
+
+    ul{
+        display: none;
+    }
+
+    .section__description{
+        flex-direction: column;
+    }
+
+    .section__description--wrapper{
+        width: 100%;
+    }
+
+    .about__img--wrapper{
+        width: 100%;
+    }
+
+    #discord .section__description{
+        flex-direction: column-reverse;
+    }
+
+    footer{
+        padding: 48px 24px;
+    }
+
+    .footer__logo{
+        max-width: 360px;
+    }
+
+    .footer__links{
+        padding: 0 4px;
+        font-size: 18px;
+    }
+
+    .footer__links{
+        margin-bottom: 24px;
+    }
+
+
+}
+
